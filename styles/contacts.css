@@ -1,0 +1,39 @@
+#contacts {
+  background-image: url(../assets/img/Background_Contacts.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 787px;
+}
+header {
+  gap: 8px;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 400px;
+  margin: auto;
+ li{
+   border: 1px solid var(--gray-300);
+   background-color: var(--gray-300);
+   height: 68px;
+   border-radius: 8px;
+   display: flex;
+   align-items: center;
+   a{
+     width: 75%;
+     text-decoration: none;
+     color: var(--gray-500);
+    }
+    .img-cont {
+      padding: 3px;
+      margin: 20px 12px 20px 20px;
+      fill: #fff;
+    }
+  }
+}
+ul li a:hover {
+  border-color: var(--blue);
+  fill: var(--blue);
+}
