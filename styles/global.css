@@ -56,3 +56,11 @@ h2{
   font: var(--text-sm);
   color: var(--gray-400);
 }
+.tt-md{
+  font: var(--title-md);
+  color: var(--gray-600);
+}
+.tt-sm{
+  font: var(--title-sm);
+  color: var(--gray-600);
+}
