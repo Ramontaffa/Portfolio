@@ -2,10 +2,18 @@
   background-image: url(../assets/img/Background_Contacts.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 787px;
+  height: auto;
+  padding-block: 128px 200px;
 }
-header {
+#head-c {
+  display: flex;
+  flex-direction: column;
   gap: 8px;
+  padding-block: 0px 48px;
+  text-align: center;
+  #purple {
+    color: var(--purple);
+  }
 }
 ul {
   list-style-type: none;
@@ -15,25 +23,45 @@ ul {
   width: 400px;
   margin: auto;
  li{
-   border: 1px solid var(--gray-300);
-   background-color: var(--gray-300);
-   height: 68px;
-   border-radius: 8px;
-   display: flex;
-   align-items: center;
+  border: 1px solid var(--gray-300);
+  background-color: var(--gray-300);
+
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+
+  border-radius: 8px;
+  height: 68px;
+  padding-inline: 20px;
+  transition: border-color 0.3s ease;
+   
    a{
-     width: 75%;
-     text-decoration: none;
-     color: var(--gray-500);
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    color: var(--gray-500);
+    position: relative;
+
     }
     .img-cont {
       padding: 3px;
-      margin: 20px 12px 20px 20px;
-      fill: #fff;
+      margin: 20px 12px 20px 0px;
+      filter: none;
+    }
+    span {
+      flex-grow: 1;
+      text-align: left;
+      margin-top: 26px;
+    }
+    .blue-seta {
+      margin-left: auto;
+      padding: 4.37px;
     }
   }
 }
-ul li a:hover {
-  border-color: var(--blue);
-  fill: var(--blue);
+ul li:hover {
+  border: 1.5px solid var(--blue);
+}
+ul li:hover .img-cont {
+  filter: invert(66%) sepia(44%) saturate(3099%) hue-rotate(175deg) brightness(95%) contrast(95%);
 }

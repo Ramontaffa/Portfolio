@@ -2,8 +2,8 @@
   background-image: url(../assets/img/Background_Intro.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 750px;
-  padding-block: 120px;
+  height: auto;
+  padding-block: 120px 0px;
  }
 .intro {
   display: flex;
@@ -61,6 +61,7 @@ header {
 
 #seta {
   display: flex;
-  margin-block: 94px 57px;
+  padding-block: 94px 57px;
+  text-align: center;
   margin-inline: auto;
 }
